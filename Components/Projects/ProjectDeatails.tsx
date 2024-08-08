@@ -1,0 +1,64 @@
+import React from 'react';
+import ProjectCard from './ProjectCard';
+import nextjs from "@/public/icons8-nextjs.svg";
+import reactjs from "@/public/icons8-react-js.svg";
+import tailwind from "@/public/icons8-tailwind-css.svg";
+import gsap from "@/public/gsap-greensock.svg";
+import framer from "@/public/icons8-framer.png";
+import redux from "@/public/icons8-redux.svg";
+
+const ProjectDetails = () => {
+    const projects = [
+        {
+            title: 'Food Delivery',
+            description: 'I developed a dynamic food delivery website using Next.js, incorporating advanced GSAP and Framer Motion animations to enrich user interaction. Utilizing Tailwind CSS for a polished UI and Redux for seamless state management.',
+            demoLink: 'https://food-delivery-vert.vercel.app/',
+            githubLink: 'https://github.com/elsnoty/Food-Delivery',
+            heightClass: 'h-[500px] max-md:h-[700px] lg:h-[500px]',
+            skills: [nextjs, tailwind, framer, redux, gsap],
+        },
+        {
+            title: 'RealEstate',
+            description: 'This website offers a seamless experience for finding your dream property. With advanced filtering options for price, location, and property type Responsive design ensures a smooth browsing experience across all devices.',
+            demoLink: 'https://real-estate-nu-amber.vercel.app/',
+            githubLink: 'https://github.com/elsnoty/RealEstate',
+            heightClass: 'h-[500px] md:h-[700px] lg:h-[500px]',
+            skills: [reactjs, tailwind, framer],
+        },
+        {
+            title: 'NFT Landing page',
+            description: 'Description for project 3.',
+            demoLink: 'https://nft-liart-rho.vercel.app/',
+            githubLink: 'https://github.com/elsnoty/nft',
+            heightClass: 'h-[500px] md:h-[700px] lg:h-[500px]',
+            skills: [reactjs, tailwind, framer],
+        },
+        {
+            title: 'Project 4',
+            description: 'This page was designed using Figma and implemented with Lenis Scroll and GSAP, as well as Framer Motion. The design is fully responsive to enhance user experience.',
+            demoLink: 'https://uno-theta.vercel.app/',
+            githubLink: 'https://github.com/elsnoty/UNO',
+            heightClass: 'h-[500px] md:h-[700px] lg:h-[500px]',
+            skills: [nextjs, tailwind],
+        },
+    ];
+
+    return (
+        //get data
+        <div className='flex-col flex gap-5 text-white font-Exo'>
+            {projects.map((project, index) => (
+                <ProjectCard 
+                    key={index}
+                    title={project.title}
+                    description={project.description}
+                    demoLink={project.demoLink}
+                    githubLink={project.githubLink}
+                    heightClass={project.heightClass}
+                    skills={project.skills}
+                />
+            ))}
+        </div>
+    );
+};
+
+export default ProjectDetails;

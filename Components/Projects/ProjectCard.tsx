@@ -1,0 +1,48 @@
+import React from 'react';
+import ProjectsProp from './ProjectsProp';
+import Btn from '@/util/Btn';
+import Image, { StaticImageData } from 'next/image';
+import Link from 'next/link';
+import githup from "@/public/gitBtn.png";
+import Demo from "@/public/demoIcon.png";
+
+interface Project {
+    title: string;
+    description: string;
+    demoLink: string;
+    githubLink: string;
+    heightClass: string;
+    skills: StaticImageData[];
+}
+
+const ProjectCard: React.FC<Project> = ({ title, description, demoLink, githubLink, heightClass, skills }) => (
+    <ProjectsProp 
+    className={`${heightClass} lg:max-w-[600px] bg-gradient-to-t from-[#0B77D5] to-[#0961AE] 
+    shadow-xl sticky top-0 md:my-10 lg:my-20 rounded-2xl p-5`}>
+        <h3 className='text-3xl'>{title}</h3>
+        <p className='py-5'>{description}</p>
+        <div className='flex flex-wrap gap-4 mt-auto'>
+            {skills.map((skill, index) => (
+                <Image key={index} src={skill} alt="Skill icon" className='w-8 h-8' />
+            ))}
+        </div>
+        <div className='flex items-center flex-wrap gap-2 my-4'>
+            <Link href={demoLink} target='_blank'>
+                <Btn 
+                    className='flex gap-2 bg-red-500 items-center px-2 py-1 rounded-lg'
+                    text='Live Demo'
+                    icon={<Image src={Demo} alt='Demo' />}
+                />
+            </Link>
+            <Link href={githubLink} target='_blank'>
+                <Btn 
+                    className='flex gap-2 bg-red-500 items-center px-2 py-1 rounded-lg'
+                    text='GitHub'
+                    icon={<Image src={githup} alt='GitHub' />}
+                />
+            </Link>
+        </div>
+    </ProjectsProp>
+);
+
+export default ProjectCard;
