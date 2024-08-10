@@ -1,10 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
-import b1o from "../../public/ProjectImage4.png";
-import b2o from "../../public/PojectImage2.png";
-import b3o from "../../public/ProjectImage3.png";
-import b4o from "../../public/ProjectImage1.png"; 
+import b1o from "../../public/ProjectImage4.jpg";
+import b2o from "../../public/PojectImage2.jpg";
+import b3o from "../../public/ProjectImage3.jpg";
+import b4o from "../../public/ProjectImage1.jpg"; 
 
 interface AdditionalContentProps {
     scrollPosition: number;

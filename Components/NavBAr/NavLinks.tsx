@@ -1,5 +1,9 @@
+"use client"
 import React from 'react';
 import LinksData from './Links';
+import { motion } from 'framer-motion';
+import { menuSlide } from './animation';
+import Curve from './Curve';
 
 interface NavLink {
   text: string;
@@ -15,13 +19,19 @@ const navLinks: NavLink[] = [
 
 const NavLinks = ({ className = '' }: { className?: string }) => {
   return (
-    <div className={`flex justify-between gap-5 items-center ${className}`}>
+    <motion.div
+    variants={menuSlide}
+    animate="enter" 
+    exit="exit" 
+    initial="initial"
+    className={`${className}`}>
       {navLinks.map((data, index) => (
         <LinksData key={index} href={data.path} index={index}>
           {data.text}
         </LinksData>
       ))}
-    </div>
+      <Curve />
+    </motion.div>
   );
 };
 

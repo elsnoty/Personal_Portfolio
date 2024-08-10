@@ -18,7 +18,7 @@ interface Project {
 
 const ProjectCard = ({ title, description, demoLink, githubLink, heightClass, skills, imageCard }: Project) => (
     <ProjectsProp 
-    className={`${heightClass} lg:max-w-[600px] bg-gradient-to-t from-[#0B77D5] to-[#0961AE] 
+    className={`${heightClass} lg:max-w-[600px] bg-[#84c1f10d] backdrop-blur-[15px]
     shadow-xl sticky top-0 md:my-10 lg:my-20 rounded-2xl p-5`}>
         <h3 className='text-3xl'>{title}</h3>
         <p className='py-5'>{description}</p>

@@ -18,7 +18,6 @@ export default function Home() {
       <SparklesPreview />
       <About />
       <Projects />
-      <BurgerMenu />
       </TracingBeam>
     </div>
   );

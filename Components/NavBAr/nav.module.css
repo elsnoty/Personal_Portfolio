@@ -12,23 +12,19 @@
 }
 
 /* //burger */
-.header{
-  padding: 30px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1;
-}
+
 
 .button{
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background-color: #455CE9;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 999;
+  position: relative;
 }
 
 .burger{
@@ -65,4 +61,16 @@
       top: 0px;
   }
   
+}
+
+/* SVG  */
+
+.svgCurve{
+  position: absolute;
+  top: 0;
+  left: -99px;
+  width: 100px;
+  height: 100%;
+  fill: #292929;
+  stroke: none;
 }

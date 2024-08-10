@@ -15,19 +15,15 @@ const BurgerMenu = () =>{
   }, [pathname])
 
   return (
-    <div className='relative h-screen w-full max-md:hidden'>
-    <div className={styles.main}>
-
-      <div className={styles.header}>
+    <div className='md:hidden'>
+      <div>
         <div onClick={() => {setIsActive(!isActive)}} className={styles.button}>
           <div className={`${styles.burger} ${isActive ? styles.burgerActive : ""}`}></div>
         </div>
-      </div>
-
     </div>
     <AnimatePresence mode="wait">
-      {isActive && <NavLinks className='hidden'/>}
-      dsfsd
+      {isActive && <NavLinks 
+      className='fixed flex items- text-center flex-col right-0 top-0 z-[50] gap-y-4 w-[60%] bg-[#292929] h-screen p-28'/>}
     </AnimatePresence>
     </div>
   )

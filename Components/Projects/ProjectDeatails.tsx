@@ -6,10 +6,10 @@ import tailwind from "@/public/icons8-tailwind-css.svg";
 import gsap from "@/public/gsap-greensock.svg";
 import framer from "@/public/icons8-framer.png";
 import redux from "@/public/icons8-redux.svg";
-import Pr1o from "@/public/ProjectImage4.png"
-import Pr2o from "@/public/PojectImage2.png"
-import Pr3o from "@/public/ProjectImage3.png"
-import Pr4o from "@/public/ProjectImage1.png"
+import Pr1o from "@/public/ProjectImage4.jpg"
+import Pr2o from "@/public/PojectImage2.jpg"
+import Pr3o from "@/public/ProjectImage3.jpg"
+import Pr4o from "@/public/ProjectImage1.jpg"
 
 const ProjectDetails = () => {
     const projects = [
