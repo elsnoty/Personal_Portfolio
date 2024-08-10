@@ -3,7 +3,7 @@ import ProjectsProp from './ProjectsProp';
 import Btn from '@/util/Btn';
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
-import githup from "@/public/gitBtn.png";
+import githup from "@/public/icons8-github.svg";
 import Demo from "@/public/demoIcon.png";
 
 interface Project {
@@ -13,9 +13,10 @@ interface Project {
     githubLink: string;
     heightClass: string;
     skills: StaticImageData[];
+    imageCard: StaticImageData;
 }
 
-const ProjectCard: React.FC<Project> = ({ title, description, demoLink, githubLink, heightClass, skills }) => (
+const ProjectCard = ({ title, description, demoLink, githubLink, heightClass, skills, imageCard }: Project) => (
     <ProjectsProp 
     className={`${heightClass} lg:max-w-[600px] bg-gradient-to-t from-[#0B77D5] to-[#0961AE] 
     shadow-xl sticky top-0 md:my-10 lg:my-20 rounded-2xl p-5`}>
@@ -42,6 +43,7 @@ const ProjectCard: React.FC<Project> = ({ title, description, demoLink, githubLi
                 />
             </Link>
         </div>
+            <Image src={imageCard} alt='data' className='rounded-xl md:hidden '/>
     </ProjectsProp>
 );
 

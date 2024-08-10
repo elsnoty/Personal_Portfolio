@@ -24,7 +24,7 @@ const AdditionalContent: React.FC<AdditionalContentProps> = ({ scrollPosition, c
     let currentImage = null;
 
     for (let i = numberOfBoxes - 1; i >= 0; i--) {
-        if (scrollPosition > boxHeight * i -100) {
+        if (scrollPosition > boxHeight * i -200) {
             currentImage = images[i];
             break;
         }
