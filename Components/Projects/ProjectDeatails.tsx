@@ -33,7 +33,7 @@ const ProjectDetails = () => {
         },
         {
             title: 'NFT Landing Page',
-            description: 'Description for project 3.',
+            description: 'This page was Transformed from Figma design and implemented with Lenis Scroll and GSAP, as well as Framer Motion. The design is fully responsive to enhance user experience.',
             demoLink: 'https://nft-liart-rho.vercel.app/',
             githubLink: 'https://github.com/elsnoty/nft',
             heightClass: 'h-[full] md:h-[700px] lg:h-[500px]',
@@ -42,7 +42,7 @@ const ProjectDetails = () => {
         },
         {
             title: 'UNO Landing Page',
-            description: 'This page was designed using Figma and implemented with Lenis Scroll and GSAP, as well as Framer Motion. The design is fully responsive to enhance user experience.',
+            description: 'This page was Transformed from Figma design and implemented with Lenis Scroll and GSAP, as well as Framer Motion. The design is fully responsive to enhance user experience.',
             demoLink: 'https://uno-theta.vercel.app/',
             githubLink: 'https://github.com/elsnoty/UNO',
             heightClass: 'h-[full] md:h-[700px] lg:h-[500px]',

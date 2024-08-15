@@ -5,6 +5,7 @@ import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import githup from "@/public/icons8-github.svg";
 import Demo from "@/public/demoIcon.png";
+import Reveal from '@/util/Reveal';
 
 interface Project {
     title: string;
@@ -19,9 +20,13 @@ interface Project {
 const ProjectCard = ({ title, description, demoLink, githubLink, heightClass, skills, imageCard }: Project) => (
     <ProjectsProp 
     className={`${heightClass} lg:max-w-[600px] bg-[#84c1f10d] backdrop-blur-[15px]
-    shadow-xl sticky top-0 md:my-10 lg:my-20 rounded-2xl p-5`}>
+    shadow-xl sticky top-0 md:my-10 lg:my-20 rounded-md p-5`}>
+        <Reveal>
         <h3 className='text-3xl'>{title}</h3>
+        </Reveal>
+        <Reveal>
         <p className='py-5'>{description}</p>
+        </Reveal>
         <div className='flex flex-wrap gap-4 mt-auto'>
             {skills.map((skill, index) => (
                 <Image key={index} src={skill} alt="Skill icon" className='w-8 h-8' />

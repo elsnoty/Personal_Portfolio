@@ -4,6 +4,7 @@ import LinksData from './Links';
 import { motion } from 'framer-motion';
 import { menuSlide } from './animation';
 import Curve from './Curve';
+import Social from '../Footer/Social';
 
 interface NavLink {
   text: string;
@@ -17,20 +18,20 @@ const navLinks: NavLink[] = [
   { text: 'Contact', path: '/#Contact' },
 ];
 
-const NavLinks = ({ className = '' }: { className?: string }) => {
+const NavLinks = ({ className = '', children }: { className?: string, children?: React.ReactNode} ) => {
   return (
     <motion.div
-    variants={menuSlide}
-    animate="enter" 
-    exit="exit" 
-    initial="initial"
     className={`${className}`}>
-      {navLinks.map((data, index) => (
-        <LinksData key={index} href={data.path} index={index}>
+      <div className='md:hidden'>
+          <h3>Navigation</h3>
+          <div className='h-1 w-full bg-slate-700 my-7'></div>
+      </div>
+      {children}
+          {navLinks.map((data, index) => (
+        <LinksData key={index} href={data.path} index={index} className='text-4xl font-Algera'>
           {data.text}
-        </LinksData>
+          </LinksData>
       ))}
-      <Curve />
     </motion.div>
   );
 };

@@ -1,10 +1,10 @@
 import React from 'react'
-import Skills from './Skills'
 import Reveal from '@/util/Reveal'
+import Magnetics from '../../util/testMagntic'
 
 const About = () => {
   return (
-    <div className='text-white max-xl:px-20 max-lg:px-5 px-32 flex text-start flex-col bg-gradient-to-t from-[#042B4E] to-[#021526] py-10'>
+    <div className='text-white max-xl:px-20 max-lg:px-5 px-32 flex flex-col bg-[#03346E] py-10'>
       <Reveal>
       <h1 className='text-6xl py-5 font-BlackOps font-bold w-fit'>About</h1>
       </Reveal>
@@ -17,6 +17,9 @@ When I&apos;m not coding, you&apos;ll find me either immersed in video games or 
  I&apos;m always eager to take on new challenges and bring fresh, innovative ideas to life. Feel free to explore my portfolio, 
  and don&apos;t hesitate to reach out if you have any questions or want to collaborate.</h3>
  </Reveal>
+    <Magnetics>
+    <div className='text-end bg-black px-14 py-16 rounded-full w-fit'>About</div>
+    </Magnetics>
     </div>
   )
 }

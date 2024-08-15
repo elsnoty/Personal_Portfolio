@@ -1,0 +1,31 @@
+.underlineFill {
+  position: relative;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 800;
+  transition: red 0.5s;
+  overflow: hidden; /* Ensures that the text stays hidden when the background covers it */
+  z-index: 0; /* Keep text above the :after element initially */
+}
+
+.underlineFill:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  background: black;
+  transition: height 0.5s ease-in-out;
+}
+
+.underlineFill:hover:after {
+  height: 100%;
+  background: white;
+  z-index: -1; /* Bring the background in front of the text */
+}
+
+.underlineFill:hover {
+  color: black;
+  z-index: 10; /* Match text color to background after transition */
+}

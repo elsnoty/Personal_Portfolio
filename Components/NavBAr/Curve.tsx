@@ -1,4 +1,3 @@
-"use client"
 import React from 'react'
 import { motion } from 'framer-motion';
 import styles from './nav.module.css';
@@ -23,7 +22,7 @@ export default function Curve() {
   }
 
   return (
-    <svg className={styles.svgCurve}>
+    <svg className={`${styles.svgCurve} h-auto`}>
         <motion.path variants={curve} initial="initial" animate="enter" exit="exit"></motion.path>
     </svg>
   )

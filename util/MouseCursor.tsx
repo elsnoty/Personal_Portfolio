@@ -5,7 +5,7 @@ import styles from '../Components/NavBAr/nav.module.css';
 
 const CustomCursor: React.FC = () => {
   const cursor = useRef<HTMLDivElement>(null);
-  const cursorSize = 35;
+  const cursorSize = 25;
 
   const mouse = {
     x: useMotionValue(0),
