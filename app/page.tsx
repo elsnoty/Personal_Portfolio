@@ -8,6 +8,7 @@ import ContactPage from "@/Components/Contact/Contact";
 import BurgerMenu from "@/Components/NavBAr/BurgerMenu";
 import Contact from "@/Components/Contact/Contact";
 import NavLinks from "@/Components/NavBAr/NavLinks";
+import Footer from "@/Components/Footer/Footer";
 
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <About />
       <Projects />
       <Contact />
+      <Footer />
     </div>
   );
 }

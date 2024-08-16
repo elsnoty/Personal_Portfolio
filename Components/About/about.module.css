@@ -1,0 +1,15 @@
+.hoverBg::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: #455CE9; /* blue-950 */
+    transition: height 0.5s ease-in-out;
+    z-index: -1;
+  }
+  
+  .hoverBg:hover::before {
+    height: 100%;
+  }

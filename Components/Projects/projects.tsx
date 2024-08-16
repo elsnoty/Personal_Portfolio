@@ -31,10 +31,10 @@ const Projects = () => {
     }, []);
 
     return (
-        <div id='Projects' className='bg-gradient-to-b from-[#042B4E] to-[#064174] max-xl:px-20 max-lg:px-5 max-sm:px-[10px] px-32 py-10' ref={RefTarget}>
+        <div id='Projects' className='bg-gradient-to-b from-[#021526] to-black max-xl:px-20 max-lg:px-5 max-sm:px-[10px] px-32 py-10' ref={RefTarget}>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-10 max-md:grid-cols-1'>
                 <ProjectDeatails/>
-                <div className='bg-white/45 sticky top-72 max-w-[550px] h-[250px] rounded-2xl my-20 max-md:hidden'>
+                <div className='bg-[#2E236C] sticky top-72 max-w-[550px] h-[250px] rounded-2xl my-20 max-md:hidden'>
                     <div className='relative'>
                         <AnimatePresence>
                             <AdditionalContent

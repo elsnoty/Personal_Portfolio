@@ -1,10 +1,8 @@
-"use client"
+'use client';
+
 import React from 'react';
-import LinksData from './Links';
 import { motion } from 'framer-motion';
-import { menuSlide } from './animation';
-import Curve from './Curve';
-import Social from '../Footer/Social';
+import LinksData from './Links';
 
 interface NavLink {
   text: string;
@@ -18,19 +16,18 @@ const navLinks: NavLink[] = [
   { text: 'Contact', path: '/#Contact' },
 ];
 
-const NavLinks = ({ className = '', children }: { className?: string, children?: React.ReactNode} ) => {
+const NavLinks = ({ className = '', children, onLinkClick }: { className?: string, children?: React.ReactNode, onLinkClick?: () => void }) => {
   return (
-    <motion.div
-    className={`${className}`}>
+    <motion.div className={`${className}`}>
       <div className='md:hidden'>
-          <h3>Navigation</h3>
-          <div className='h-1 w-full bg-slate-700 my-7'></div>
+        <h3 className='text-xl'>Navigation</h3>
+        <div className='h-1 w-full bg-slate-700 my-7'></div>
       </div>
       {children}
-          {navLinks.map((data, index) => (
-        <LinksData key={index} href={data.path} index={index} className='text-4xl font-Algera'>
+      {navLinks.map((data, index) => (
+        <LinksData key={index} href={data.path} index={index} className='font-Algera' onClick={onLinkClick}>
           {data.text}
-          </LinksData>
+        </LinksData>
       ))}
     </motion.div>
   );

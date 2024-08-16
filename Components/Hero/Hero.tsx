@@ -11,15 +11,15 @@ const Hero = () => {
   return (
     <div className='w-full mt-56 max-md:mt-32 max-xl:px-20 max-lg:px-5 max-sm:px-[10px] px-32'>
       <TypeEffect />
-      <div className='text-[#E2E2B6]'>
+      <div className=''>
         <Reveal>
-          <h1 className='text-6xl py-5 font-Exo font-bold max-sm:text-4xl'>Mostafa Shawky.</h1>
+          <h1 className='text-6xl py-5 font-BlackOps font-bold max-sm:text-4xl text-[#E2E2B6]'>Mostafa Shawky</h1>
           </Reveal>
         <Reveal>
-          <h1 className='text-5xl py-5 font-Algera font-bold max-sm:text-3xl'>FRONT-END DEVELOPER</h1>
+          <h1 className='text-5xl py-5 font-Algera font-bold max-sm:text-3xl text-[#E2E2B6]'>FRONT-END DEVELOPER</h1>
           </Reveal>
         <Reveal>
-        <p className='text-2xl text-gray-500 font-Exo font-bold'>
+        <p className='text-2xl font-Exo font-bold'>
         A passionate and creative Front-end developer is adept at bringing any design concept to life.
         </p>
         </Reveal>

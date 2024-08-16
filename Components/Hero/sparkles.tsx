@@ -4,7 +4,7 @@ import Hero from "./Hero";
 
 export function SparklesPreview() {
   return (
-    <div className="h-screen max-md:h-auto relative w-full bg-[#03346E] flex flex-col items-center justify-center pb-10">
+    <div className="h-[90vh] max-md:h-auto relative w-full bg-black flex flex-col items-center justify-center pb-10">
       <div className="w-full absolute inset-0 h-full">
         <SparklesCore
           id="tsparticlesfullpage"

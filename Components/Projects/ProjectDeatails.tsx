@@ -53,7 +53,7 @@ const ProjectDetails = () => {
 
     return (
         //get data
-        <div className='flex-col flex gap-5 text-white font-Exo text-xl'>
+        <div className='flex-col flex gap-5 text-white'>
             {projects.map((project, index) => (
                 <ProjectCard 
                     key={index}

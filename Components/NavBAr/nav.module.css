@@ -65,12 +65,13 @@
 
 /* SVG  */
 
-.svgCurve{
+.svgCurve {
   position: absolute;
   top: 0;
-  left: -99px;
-  width: 100px;
+  left: -99px; 
+  width: 100px; 
   height: 100%;
   fill: #292929;
   stroke: none;
+  pointer-events: none; /* This allows clicks to pass through the SVG */
 }
