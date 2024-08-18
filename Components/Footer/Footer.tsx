@@ -8,7 +8,7 @@ const Footer = () => {
         <div className='flex flex-wrap gap-5'>
       <div>
         <p className='font-Exo pb-4 text-xl'>Version</p>
-        <h3 className='font-BlackOps'>&copy; Mostafa Shawky</h3>
+        <h3 className='font-Exo text-gray-500'>&copy; Mostafa Shawky</h3>
       </div>
       <div >
         <p className='text-xl font-Exo pb-4'>Contact</p>

@@ -22,10 +22,6 @@ const schema = yup.object().shape({
     }),
   message: yup.string()
     .required('Message is required')
-    .test('injection', 'Invalid characters', (value) => {
-      const injectionPattern = /[`~!#$%^&*()|+=?;:'",<>{}[\]\\\/]/;
-      return value ? !injectionPattern.test(value) : true;
-    }),
 });
 
 const Contact: React.FC = () => {
