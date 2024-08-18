@@ -1,5 +1,4 @@
 'use client';
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import LinksData from './Links';
@@ -25,7 +24,7 @@ const NavLinks = ({ className = '', children, onLinkClick }: { className?: strin
       </div>
       {children}
       {navLinks.map((data, index) => (
-        <LinksData key={index} href={data.path} index={index} className='font-Algera' onClick={onLinkClick}>
+        <LinksData key={index} href={data.path} index={index} className='font-Exo' onClick={onLinkClick}>
           {data.text}
         </LinksData>
       ))}

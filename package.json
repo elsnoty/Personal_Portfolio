@@ -9,8 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@hookform/resolvers": "^3.9.0",
-    "@studio-freight/react-lenis": "^0.0.47",
     "@tsparticles/engine": "^3.5.0",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.5.0",
@@ -18,6 +18,7 @@
     "clsx": "^2.1.1",
     "framer-motion": "^11.3.24",
     "gsap": "^3.12.5",
+    "lenis": "^1.1.9",
     "lucide-react": "^0.414.0",
     "next": "14.2.5",
     "react": "^18",

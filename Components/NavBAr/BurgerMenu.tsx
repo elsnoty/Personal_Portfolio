@@ -1,5 +1,4 @@
 'use client';
-
 import { useEffect, useRef, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { usePathname } from 'next/navigation';
@@ -17,9 +16,6 @@ const BurgerMenu = () => {
   const buttonRef = useRef<HTMLDivElement>(null);
 
   const handleClickOutside = (event: MouseEvent) => {
-    // Debugging: Check what is being clicked
-    console.log('Clicked target:', event.target);
-    
     if (
       menuRef.current && !menuRef.current.contains(event.target as Node) &&
       buttonRef.current && !buttonRef.current.contains(event.target as Node)
@@ -47,14 +43,15 @@ const BurgerMenu = () => {
 
   return (
     <div className='md:hidden'>
-      {/* Temporarily remove Magnetics to isolate the issue */}
+      <Magnetics>
       <div
         ref={buttonRef}
         onClick={() => setIsActive(!isActive)}
-        className={styles.button}
+        className={`overflow-hidden ${styles.button}`}
       >
         <div className={`${styles.burger} ${isActive ? styles.burgerActive : ''}`}></div>
       </div>
+      </Magnetics>
       <AnimatePresence mode='wait'>
         {isActive && (
           <motion.div
@@ -63,10 +60,10 @@ const BurgerMenu = () => {
             initial="initial"
             animate="enter"
             exit="exit"
-            className='fixed right-0 top-0 z-[50] w-[60%] max-sm:w-full h-screen bg-[#292929] py-24 px-12 flex flex-col justify-between'
+            className='fixed right-0 top-0 z-[50] w-[60%] max-sm:w-full h-screen bg-[#292929] py-24 max-sm:px-14 px-12 flex flex-col justify-between'
             ref={menuRef}
           >
-            <NavLinks className='flex-1 text-start flex flex-col gap-y-4 text-5xl' onLinkClick={handleLinkClick} />
+            <NavLinks className='flex-1 text-start flex flex-col gap-y-4 text-6xl font-bold max-sm:text-4xl' onLinkClick={handleLinkClick} />
             <Social className='mt-4' />
             <Curve />
           </motion.div>

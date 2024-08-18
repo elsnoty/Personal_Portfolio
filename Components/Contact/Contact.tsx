@@ -36,12 +36,9 @@ const Contact: React.FC = () => {
   const onSubmit: SubmitHandler<IFormInput> = (data) => {
     window.open(`mailto:mostafashawky399@gmail.com?subject=New Contact&body=${data.message}`);
   };
-
-  // Debugging: Log errors to console
-  console.log(errors);
-
+  
   return (
-    <div className="w-full flex flex-col gap-y-8 items-center justify-center h-screen bg-gradient-to-b from-black to-[#021526] px-5 lg:px-32">
+    <div className="w-full flex flex-col gap-y-8 items-center justify-center h-screen bg-gradient-to-b from-black to-[#021526] px-5 lg:px-32" id='Contact'>
       <div className='flex justify-between items-center w-[60%] max-md:w-full max-sm:flex-wrap'>
         <h1 className='font-BlackOps text-4xl text-white text-start pb-10'>Let&apos;s start a project together</h1>
         <Magnetics>

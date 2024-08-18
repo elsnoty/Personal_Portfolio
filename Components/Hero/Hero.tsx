@@ -6,6 +6,8 @@ import githup from "../../public/icons8-github.gif"
 import linkedin from "../../public/icons8-linkedin-2.gif"
 import TypeEffect from './TypeEffect';
 import Reveal from '@/util/Reveal';
+import styles from "./hero.module.css"
+
 const Hero = () => {
   
   return (
@@ -25,7 +27,7 @@ const Hero = () => {
         </Reveal>
         <div className='mt-8 flex flex-wrap gap-5 justify-start items-start'>
           <Link href="https://github.com/elsnoty" target='_blank' 
-          className='bg-gradient-to-t from-[#2b3137] to-[#24292e] text-black font-bold px-6 py-3 rounded-lg flex items-center gap-2'>
+          className={`shadow-lg shadow-gray-600 before:bg-gray-800 ${styles.btns} ${styles.hoverBg}`}>
           <Image 
             src={githup}
             alt='docsGif'
@@ -33,8 +35,8 @@ const Hero = () => {
             <p>View My Work</p>
           </Link>
           <Link
-          href="https://drive.google.com/file/d/1PgLiFrxnXWWtc0GgYbJ90af4ldbeWtSy/view?usp=sharing"
-          className='text-white px-6 py-3 rounded-lg bg-blue-600 flex items-center gap-2' 
+          href="https://www.linkedin.com/in/mostafa-shawky-a58053263/"
+          className={`shadow-lg shadow-blue-700 before:bg-blue-700 ${styles.btns} ${styles.hoverBg}`}
           target="_blank">
             <Image 
             src={linkedin}
@@ -44,7 +46,7 @@ const Hero = () => {
           </Link>
           <Link
           href="https://drive.google.com/file/d/1PgLiFrxnXWWtc0GgYbJ90af4ldbeWtSy/view?usp=sharing"
-          className='text-white px-6 py-3 rounded-lg bg-green-600 flex items-center gap-2' 
+          className={`shadow-lg shadow-green-700 before:bg-green-700 ${styles.btns} ${styles.hoverBg}`} 
           target="_blank">
             <Image 
             src={docCV}

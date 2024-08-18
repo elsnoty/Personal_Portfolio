@@ -1,7 +1,6 @@
 'use client';
 import React, { useEffect, useRef, useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
-import ProjectsProp from './ProjectsProp';
 import AdditionalContent from './AdditionalContent';
 import ProjectDeatails from './ProjectDeatails';
 

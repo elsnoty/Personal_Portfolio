@@ -4,11 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 
+
 body{
   overflow-y: hidden;
-} */
-
+}
+html {
+  scroll-behavior: smooth;
+}
 html.lenis, html.lenis body {
   height: auto;
 }
@@ -27,4 +29,4 @@ html.lenis, html.lenis body {
 
 .lenis.lenis-smooth iframe {
   pointer-events: none;
-}
+} 
