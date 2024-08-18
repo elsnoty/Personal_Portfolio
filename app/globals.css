@@ -5,9 +5,6 @@
 @tailwind utilities;
 
 
-body{
-  overflow-y: hidden;
-}
 html {
   scroll-behavior: smooth;
 }
@@ -30,3 +27,6 @@ html.lenis, html.lenis body {
 .lenis.lenis-smooth iframe {
   pointer-events: none;
 } 
+::-webkit-scrollbar {
+  width: 0px;
+}
