@@ -45,7 +45,7 @@ const Hero = () => {
             <p>LINKEDIN</p>
           </Link>
           <Link
-          href="https://drive.google.com/file/d/1PgLiFrxnXWWtc0GgYbJ90af4ldbeWtSy/view?usp=sharing"
+          href="https://drive.google.com/file/d/1AK4M9O8COsh9Xq52-J7uSuvCzLVInNje/view?usp=sharing"
           className={`shadow-lg shadow-green-700 before:bg-green-700 ${styles.btns} ${styles.hoverBg}`} 
           target="_blank">
             <Image 
