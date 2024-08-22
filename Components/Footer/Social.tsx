@@ -13,7 +13,7 @@ const Social = ({ className = '' }: { className?: string }) => {
         <Link href="https://twitter.com/ElSNOTY_7" target="_blank" className={`${style.underlineFill}`}>
           Twitter
         </Link>
-        <Link href="https://www.linkedin.com/in/mostafa-shawky-a58053263/" target="_blank" className={`${style.underlineFill}`}>
+        <Link href="https://www.linkedin.com/in/mostafashawkyfrontend/" target="_blank" className={`${style.underlineFill}`}>
           LinkedIn
         </Link>
       </div>
