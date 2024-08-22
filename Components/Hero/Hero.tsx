@@ -35,7 +35,7 @@ const Hero = () => {
             <p>View My Work</p>
           </Link>
           <Link
-          href="https://www.linkedin.com/in/mostafa-shawky-a58053263/"
+          href="https://www.linkedin.com/in/mostafashawkyfrontend/"
           className={`shadow-lg shadow-blue-700 before:bg-blue-700 ${styles.btns} ${styles.hoverBg}`}
           target="_blank">
             <Image 
