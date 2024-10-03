@@ -5,6 +5,7 @@ import b1o from "../../public/ProjectImage4.jpg";
 import b2o from "../../public/PojectImage2.jpg";
 import b3o from "../../public/ProjectImage3.jpg";
 import b4o from "../../public/ProjectImage1.jpg"; 
+import Pr5o from "@/public/E-commerce.png"
 
 interface AdditionalContentProps {
     scrollPosition: number;
@@ -13,13 +14,14 @@ interface AdditionalContentProps {
 }
 
 const images = [
+    { id: 5, src: Pr5o, alt: 'Project5' },
     { id: 1, src: b1o, alt: 'Project1' },
+    { id: 4, src: b4o, alt: 'Project4' },
     { id: 2, src: b2o, alt: 'Project2' },
     { id: 3, src: b3o, alt: 'Project3' },
-    { id: 4, src: b4o, alt: 'Project4' },
 ];
 
-const AdditionalContent: React.FC<AdditionalContentProps> = ({ scrollPosition, containerHeight, numberOfBoxes }) => {
+const AdditionalContent= ({ scrollPosition, containerHeight, numberOfBoxes }: AdditionalContentProps) => {
     const boxHeight = containerHeight / numberOfBoxes;
     let currentImage = null;
 
