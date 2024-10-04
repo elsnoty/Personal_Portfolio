@@ -1,3 +1,6 @@
+
+![Screenshot (330)](https://github.com/user-attachments/assets/4c8c7295-bda0-413d-bfc0-407e5732f28f)
+
 💻 Mostafa Shawky's Portfolio
 Welcome to my personal portfolio showcasing my web development projects and skills. I specialize in building dynamic, user-friendly web applications using Next.js, TypeScript, Tailwind CSS, and MERN Stack.
 
