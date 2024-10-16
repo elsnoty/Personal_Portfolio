@@ -19,7 +19,7 @@ const ProjectDetails = () => {
         {
             title: 'ELSNOTY E-commerce',
             description: 'This is a full-stack e-commerce application built using Next.js, TypeScript, Redux, Tailwind CSS, MongoDB, Node.js, and Express. It features user authentication with login and register pages, product management, state management using Redux, and the ability to add and display reviews for each product. The app is fully responsive and provides a seamless user experience. ',
-            demoLink: 'https://mern-e-commerce-yl8m.vercel.app/',
+            demoLink: 'https://mern-e-commerce-sp.vercel.app/',
             githubLink: 'https://github.com/elsnoty/MERN-E-commerce',
             heightClass: 'h-[full] md:h-[700px] lg:h-[500px]',
             skills: [nextjs, tailwind, redux, express, mongo],
