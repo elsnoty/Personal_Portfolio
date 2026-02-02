@@ -6,6 +6,7 @@ import b2o from "../../public/PojectImage2.jpg";
 import b3o from "../../public/ProjectImage3.jpg";
 import b4o from "../../public/ProjectImage1.jpg"; 
 import Pr5o from "@/public/E-commerce.png"
+import Pr6o from "@/public/Fitxora.png"
 
 interface AdditionalContentProps {
     scrollPosition: number;
@@ -14,6 +15,7 @@ interface AdditionalContentProps {
 }
 
 const images = [
+    { id: 6, src: Pr6o, alt: 'Project6' },
     { id: 5, src: Pr5o, alt: 'Project5' },
     { id: 1, src: b1o, alt: 'Project1' },
     { id: 4, src: b4o, alt: 'Project4' },

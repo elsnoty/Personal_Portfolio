@@ -39,7 +39,7 @@ const Projects = () => {
                             <AdditionalContent
                                 scrollPosition={scrollPosition}
                                 containerHeight={containerHeight}
-                                numberOfBoxes={5}
+                                numberOfBoxes={6}
                             />
                         </AnimatePresence>  
                     </div>

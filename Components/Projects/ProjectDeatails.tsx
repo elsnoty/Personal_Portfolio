@@ -6,16 +6,28 @@ import tailwind from "@/public/icons8-tailwind-css.svg";
 import gsap from "@/public/gsap-greensock.svg";
 import mongo from "@/public/icons8-mongo-db-48.png";
 import express from "@/public/icons8-express-js.svg";
-import framer from "@/public/icons8-framer.png";
+import framer from "@/public/Motion_Logo.svg";
 import redux from "@/public/icons8-redux.svg";
 import Pr1o from "@/public/ProjectImage4.jpg"
 import Pr2o from "@/public/PojectImage2.jpg"
 import Pr3o from "@/public/ProjectImage3.jpg"
 import Pr4o from "@/public/ProjectImage1.jpg"
 import Pr5o from "@/public/E-commerce.png"
+import supabase from '@/public/supabase-logo-icon.svg'
+import typescript from "@/public/typescript.svg"
+import Pr6o from '@/public/Fitxora.png'
 
 const ProjectDetails = () => {
     const projects = [
+        {
+            title: 'Fitxora',
+            description: 'A premium SaaS fitness platform connecting elite trainers with athletes. It features a sophisticated role-based access control system, real-time messaging, booking management. Built with a mobile-first approach, the platform features a fully optimized SEO architecture with dynamic sitemaps and metadata, ensuring high visibility and a seamless user experience across all devices.',
+            demoLink: 'https://fitxora.vercel.app/',
+            githubLink: 'https://github.com/elsnoty',
+            heightClass: 'h-[full] md:h-[700px] lg:h-[500px]',
+            skills: [nextjs, tailwind, supabase, framer, typescript], 
+            imageCard: Pr6o,
+        },
         {
             title: 'ELSNOTY E-commerce',
             description: 'This is a full-stack e-commerce application built using Next.js, TypeScript, Redux, Tailwind CSS, MongoDB, Node.js, and Express. It features user authentication with login and register pages, product management, state management using Redux, and the ability to add and display reviews for each product. The app is fully responsive and provides a seamless user experience. ',
